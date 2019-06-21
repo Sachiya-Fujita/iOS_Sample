@@ -19,6 +19,10 @@ class PushViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var resultField: UITextField!
 
@@ -30,6 +34,12 @@ class PushViewController: UIViewController,UITextFieldDelegate {
         var result:Double = 0
         result = Double(inputField.text!)! / usdToJpy
         resultField.text = String(format:"%.2f",result)
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     /*
     // MARK: - Navigation
