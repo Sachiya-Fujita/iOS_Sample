@@ -3,6 +3,11 @@
 import UIKit
 import PlaygroundSupport
 
+var y = 0
+for _ in 1...100 {
+    y += 1
+    }
+
 class MyViewController : UIViewController {
     override func loadView() {
         let view = UIView()
