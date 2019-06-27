@@ -15,6 +15,25 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
 
+    @IBAction func segmentButton(_ sender: UISegmentedControl) {
+        let storyboard: UIStoryboard = self.storyboard!
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            let nextView = storyboard.instantiateViewController(withIdentifier: "Comic")
+            present(nextView, animated: true, completion: nil)
+            
+        case 1:
+            let nextView = storyboard.instantiateViewController(withIdentifier: "Novel")
+            present(nextView, animated: true, completion: nil)
+
+        default:
+            print("")
+        }
+            
+    }
+    
 }
 
