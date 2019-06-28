@@ -111,7 +111,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NoQ-nb-gx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="wlu-uH-r8q" customClass="PageViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="-1289" y="2201"/>
+            <point key="canvasLocation" x="-1039" y="2377"/>
         </scene>
         <!--View Controller01-->
         <scene sceneID="3cO-N5-rbs">
@@ -127,6 +127,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-nL-5IN">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Q8O-QY-jxM">
+                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="tapPageControl:" destination="Qp5-qb-0eE" eventType="valueChanged" id="dR1-Fx-8hX"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -144,11 +153,12 @@
                     <connections>
                         <outlet property="myImageView" destination="yRu-MA-mFd" id="WB0-4M-spS"/>
                         <outlet property="myScrollView" destination="ugD-nL-5IN" id="mQc-gm-bSi"/>
+                        <outlet property="pageControl" destination="Q8O-QY-jxM" id="HLf-Qq-cgf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xel-1G-KcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="1961"/>
+            <point key="canvasLocation" x="-2.3999999999999999" y="1960.569715142429"/>
         </scene>
         <!--View Controller03-->
         <scene sceneID="fog-lb-f6x">
@@ -165,6 +175,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nerv_logoFix" translatesAutoresizingMaskIntoConstraints="NO" id="DeU-87-BzD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="nyu-GW-DoN">
+                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="tapPageControl:" destination="RBK-kq-tgT" eventType="valueChanged" id="uLj-GK-veu"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -201,6 +220,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nerv_logo2" translatesAutoresizingMaskIntoConstraints="NO" id="XPv-P6-TuT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="iOO-x5-T2l">
+                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="tapPageControl:" destination="nPt-B6-1Ug" eventType="valueChanged" id="v3y-iN-p1o"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -218,6 +246,7 @@
                     <connections>
                         <outlet property="myImageView" destination="XPv-P6-TuT" id="x6b-5I-oif"/>
                         <outlet property="myScrollView" destination="DBi-ml-yij" id="xR0-DL-eb8"/>
+                        <outlet property="pageControl" destination="iOO-x5-T2l" id="jLX-ly-N34"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNi-57-by9" userLabel="First Responder" sceneMemberID="firstResponder"/>

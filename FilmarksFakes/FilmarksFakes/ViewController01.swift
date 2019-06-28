@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController01: UIViewController, UIScrollViewDelegate  {
+class ViewController01: UIViewController, UIScrollViewDelegate {
 
     
     @IBOutlet weak var myScrollView: UIScrollView!
@@ -31,6 +31,35 @@ class ViewController01: UIViewController, UIScrollViewDelegate  {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.myImageView
     }
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+
+    @IBAction func tapPageControl(_ sender: UIPageControl) {
+        myScrollView.setContentOffset(CGPoint(x: myScrollView.bounds.size.width * CGFloat(sender.currentPage), y: 0.0), animated: true)
+/*
+        let storyboard: UIStoryboard = self.storyboard!
+
+        switch sender.currentPage{
+        case 0:
+            let nextView = storyboard.instantiateViewController(withIdentifier: "vc01")
+            present(nextView, animated: true, completion: nil)
+        case 1:
+        let nextView = storyboard.instantiateViewController(withIdentifier: "vc02")
+            present(nextView, animated: true, completion: nil)
+        case 2:
+        let nextView = storyboard.instantiateViewController(withIdentifier: "vc03")
+            present(nextView, animated: true, completion: nil)
+        default:
+            print("")
+        }
+ */
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let page = Int(scrollView.contentOffset.x / scrollView.bounds.size.width)
+        pageControl.currentPage = page
+    }
+    
     /*
     // MARK: - Navigation
 
