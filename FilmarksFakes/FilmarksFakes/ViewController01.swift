@@ -35,8 +35,6 @@ class ViewController01: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
 
     @IBAction func tapPageControl(_ sender: UIPageControl) {
-        myScrollView.setContentOffset(CGPoint(x: myScrollView.bounds.size.width * CGFloat(sender.currentPage), y: 0.0), animated: true)
-/*
         let storyboard: UIStoryboard = self.storyboard!
 
         switch sender.currentPage{
@@ -52,7 +50,7 @@ class ViewController01: UIViewController, UIScrollViewDelegate {
         default:
             print("")
         }
- */
+ 
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
