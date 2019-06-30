@@ -19,6 +19,7 @@
 		A131A3EA22C5380F0088FA16 /* ViewController01.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3E922C5380F0088FA16 /* ViewController01.swift */; };
 		A131A3EC22C538240088FA16 /* ViewController03.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3EB22C538240088FA16 /* ViewController03.swift */; };
 		A131A3F422C5B51B0088FA16 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3F322C5B51B0088FA16 /* PageViewController.swift */; };
+		A131A3F622C857910088FA16 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3F522C857900088FA16 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A131A3E922C5380F0088FA16 /* ViewController01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController01.swift; sourceTree = "<group>"; };
 		A131A3EB22C538240088FA16 /* ViewController03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController03.swift; sourceTree = "<group>"; };
 		A131A3F322C5B51B0088FA16 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		A131A3F522C857900088FA16 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				A131A3E522C537C70088FA16 /* ViewController02.swift */,
 				A131A3EB22C538240088FA16 /* ViewController03.swift */,
 				A131A3F322C5B51B0088FA16 /* PageViewController.swift */,
+				A131A3F522C857900088FA16 /* MapViewController.swift */,
 				A131A3CF22C4778D0088FA16 /* Main.storyboard */,
 				A131A3D222C4778F0088FA16 /* Assets.xcassets */,
 				A131A3D422C4778F0088FA16 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 				A131A3E622C537C70088FA16 /* ViewController02.swift in Sources */,
 				A131A3CE22C4778D0088FA16 /* SecondViewController.swift in Sources */,
 				A131A3E422C527D40088FA16 /* NovelFirstViewController.swift in Sources */,
+				A131A3F622C857910088FA16 /* MapViewController.swift in Sources */,
 				A131A3EC22C538240088FA16 /* ViewController03.swift in Sources */,
 				A131A3CA22C4778D0088FA16 /* AppDelegate.swift in Sources */,
 				A131A3E022C4826B0088FA16 /* ThirdViewController.swift in Sources */,

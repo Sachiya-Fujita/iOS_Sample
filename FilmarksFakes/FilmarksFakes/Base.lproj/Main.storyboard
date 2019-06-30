@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlu-uH-r8q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" id="yKN-cZ-LUt">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vds-Iu-pUS">
-                            <rect key="frame" x="127" y="7.5" width="121" height="29"/>
+                            <rect key="frame" x="127" y="7.5" width="121" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="First"/>
@@ -63,6 +63,9 @@
                             </connections>
                         </segmentedControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentControl" destination="vds-Iu-pUS" id="6Ue-iY-jbM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,13 +108,15 @@
             </objects>
             <point key="canvasLocation" x="1207" y="-591"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Item-->
         <scene sceneID="9rc-lj-OrR">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NoQ-nb-gx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="wlu-uH-r8q" customClass="PageViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="wlu-uH-r8q" customClass="PageViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vNT-mp-yAK"/>
+                </pageViewController>
             </objects>
-            <point key="canvasLocation" x="-1039" y="2377"/>
+            <point key="canvasLocation" x="998" y="2141"/>
         </scene>
         <!--View Controller01-->
         <scene sceneID="3cO-N5-rbs">
@@ -121,14 +126,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nerv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-MA-mFd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-nL-5IN">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nerv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-MA-mFd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Q8O-QY-jxM">
-                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -158,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xel-1G-KcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2.3999999999999999" y="1960.569715142429"/>
+            <point key="canvasLocation" x="2034" y="1726"/>
         </scene>
         <!--View Controller03-->
         <scene sceneID="fog-lb-f6x">
@@ -176,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="nyu-GW-DoN">
-                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -204,7 +209,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-2" y="2782"/>
+            <point key="canvasLocation" x="2034" y="2547"/>
         </scene>
         <!--View Controller02-->
         <scene sceneID="ToA-hK-gOi">
@@ -221,7 +226,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="iOO-x5-T2l">
-                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -251,23 +256,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNi-57-by9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="1961"/>
+            <point key="canvasLocation" x="3034" y="1726"/>
         </scene>
-        <!--Item 2-->
+        <!--Map View Controller-->
         <scene sceneID="jJo-Pr-Cci">
             <objects>
-                <viewController id="jCe-UW-RfY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map" id="jCe-UW-RfY" customClass="MapViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbF-JA-kdk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Qd-7St">
+                                <rect key="frame" x="0.0" y="20" width="375" height="518"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUR-aa-OPn">
+                                <rect key="frame" x="0.0" y="536" width="186" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longtitude:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itX-L6-ocA">
+                                <rect key="frame" x="189" y="536" width="186" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-bx-EoU">
+                                <rect key="frame" x="0.0" y="578" width="188" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="開始"/>
+                                <connections>
+                                    <action selector="tapStartButton:" destination="jCe-UW-RfY" eventType="touchUpInside" id="3Dn-Ez-fwS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15g-wZ-XJz">
+                                <rect key="frame" x="187" y="578" width="188" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="終了"/>
+                                <connections>
+                                    <action selector="tapStopButton:" destination="jCe-UW-RfY" eventType="touchUpInside" id="ox6-8T-TiN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WNf-Qd-7St" firstAttribute="leading" secondItem="G7T-AW-iLZ" secondAttribute="leading" id="SlK-hf-4Rk"/>
+                            <constraint firstItem="WNf-Qd-7St" firstAttribute="top" secondItem="G7T-AW-iLZ" secondAttribute="top" id="UkL-mp-Tby"/>
+                            <constraint firstItem="G7T-AW-iLZ" firstAttribute="trailing" secondItem="WNf-Qd-7St" secondAttribute="trailing" id="WZA-zv-rAA"/>
+                            <constraint firstItem="G7T-AW-iLZ" firstAttribute="bottom" secondItem="WNf-Qd-7St" secondAttribute="bottom" constant="80" id="ldN-nB-8cC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G7T-AW-iLZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="dZq-K3-zm8"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="dZq-K3-zm8"/>
+                    <connections>
+                        <outlet property="latLabel" destination="SUR-aa-OPn" id="RIf-dE-dHM"/>
+                        <outlet property="lngLabel" destination="itX-L6-ocA" id="X18-1T-j8v"/>
+                        <outlet property="mapView" destination="WNf-Qd-7St" id="Gd0-UN-jg1"/>
+                        <outlet property="startButton" destination="BAz-bx-EoU" id="O9X-Pb-SK2"/>
+                        <outlet property="stopButton" destination="15g-wZ-XJz" id="H1X-wV-eg9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0B-bu-sam" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="1135"/>
+            <point key="canvasLocation" x="997.60000000000002" y="1134.7826086956522"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="caq-Q5-GYq">
@@ -396,7 +449,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="j1L-To-ZDp">
             <objects>
-                <tabBarController storyboardIdentifier="Novel" id="B9q-pp-2aw" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Novel" modalTransitionStyle="flipHorizontal" id="B9q-pp-2aw" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r4n-Ge-9Am">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -405,6 +458,7 @@
                     <connections>
                         <segue destination="bHt-eu-HHu" kind="relationship" relationship="viewControllers" id="MGo-J0-cDk"/>
                         <segue destination="jCe-UW-RfY" kind="relationship" relationship="viewControllers" id="KSH-xO-Yla"/>
+                        <segue destination="wlu-uH-r8q" kind="relationship" relationship="viewControllers" id="5oP-P2-Gfe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avA-sv-zuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,7 +523,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="Comic" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Comic" modalTransitionStyle="flipHorizontal" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -494,6 +548,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hPO-Ux-FEd"/>
+        <segue reference="GJp-Jl-lGK"/>
     </inferredMetricsTieBreakers>
 </document>
