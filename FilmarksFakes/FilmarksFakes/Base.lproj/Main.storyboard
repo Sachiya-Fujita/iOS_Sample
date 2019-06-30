@@ -26,11 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
-                                    <segue destination="rfl-Bq-rVg" kind="show" id="Mse-oC-IPv"/>
+                                    <segue destination="rfl-Bq-rVg" kind="show" customClass="PushFadeSegue" customModule="FilmarksFakes" customModuleProvider="target" id="Mse-oC-IPv"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mmv-Zz-gka" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="aVH-Cw-w1S"/>
                             <constraint firstItem="mmv-Zz-gka" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="oqE-U4-EWw"/>
@@ -98,6 +98,10 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="second" springLoaded="YES" systemItem="mostViewed" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="secondView" destination="QS5-Rx-YEW" id="fcy-8I-slH"/>
+                        <outlet property="uiNextButton" destination="LmA-h3-4AQ" id="3Gc-PX-YRK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

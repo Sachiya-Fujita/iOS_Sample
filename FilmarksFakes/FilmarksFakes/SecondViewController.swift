@@ -15,6 +15,9 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet var secondView: UIView!
+    @IBOutlet weak var uiNextButton: UIButton!
+
     @IBAction func unwindToFirstViewController(segue: UIStoryboardSegue) {
     }
 }
