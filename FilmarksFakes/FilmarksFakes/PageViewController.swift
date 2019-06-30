@@ -46,6 +46,14 @@ class PageViewController: UIPageViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func changePage(_ page:Int){
+        self.setViewControllers([getFirst()], direction: .forward, animated: true, completion: nil)
+    }
+    
+    func getFirst() -> FirstViewController{
+        return storyboard!.instantiateViewController(withIdentifier: "vc01") as! FirstViewController
+    }
 
 }
 
