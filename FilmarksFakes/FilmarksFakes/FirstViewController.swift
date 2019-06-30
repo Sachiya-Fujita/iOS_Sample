@@ -15,8 +15,8 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
     @IBAction func segmentButton(_ sender: UISegmentedControl) {
         let storyboard: UIStoryboard = self.storyboard!
         
