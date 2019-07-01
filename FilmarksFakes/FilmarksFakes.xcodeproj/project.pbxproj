@@ -22,6 +22,7 @@
 		A131A3F622C857910088FA16 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3F522C857900088FA16 /* MapViewController.swift */; };
 		A131A3F822C9160E0088FA16 /* PushFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3F722C9160E0088FA16 /* PushFadeSegue.swift */; };
 		A131A3FA22C916A50088FA16 /* PopFadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3F922C916A50088FA16 /* PopFadeSegue.swift */; };
+		A131A3FC22C9E6C00088FA16 /* PushFadeSegue2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A131A3FB22C9E6BF0088FA16 /* PushFadeSegue2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A131A3F522C857900088FA16 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A131A3F722C9160E0088FA16 /* PushFadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFadeSegue.swift; sourceTree = "<group>"; };
 		A131A3F922C916A50088FA16 /* PopFadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopFadeSegue.swift; sourceTree = "<group>"; };
+		A131A3FB22C9E6BF0088FA16 /* PushFadeSegue2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFadeSegue2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				A131A3F522C857900088FA16 /* MapViewController.swift */,
 				A131A3F722C9160E0088FA16 /* PushFadeSegue.swift */,
 				A131A3F922C916A50088FA16 /* PopFadeSegue.swift */,
+				A131A3FB22C9E6BF0088FA16 /* PushFadeSegue2.swift */,
 				A131A3CF22C4778D0088FA16 /* Main.storyboard */,
 				A131A3D222C4778F0088FA16 /* Assets.xcassets */,
 				A131A3D422C4778F0088FA16 /* LaunchScreen.storyboard */,
@@ -168,6 +171,7 @@
 				A131A3E622C537C70088FA16 /* ViewController02.swift in Sources */,
 				A131A3CE22C4778D0088FA16 /* SecondViewController.swift in Sources */,
 				A131A3E422C527D40088FA16 /* NovelFirstViewController.swift in Sources */,
+				A131A3FC22C9E6C00088FA16 /* PushFadeSegue2.swift in Sources */,
 				A131A3F622C857910088FA16 /* MapViewController.swift in Sources */,
 				A131A3EC22C538240088FA16 /* ViewController03.swift in Sources */,
 				A131A3FA22C916A50088FA16 /* PopFadeSegue.swift in Sources */,

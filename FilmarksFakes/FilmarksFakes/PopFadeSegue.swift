@@ -9,7 +9,7 @@
 import UIKit
 
 class PopFadeSegue: UIStoryboardSegue {
-    /*override func perform() {
+    override func perform() {
         UIView.transition(
             with: (source.navigationController?.view)!,
             duration: 0.5,
@@ -19,5 +19,5 @@ class PopFadeSegue: UIStoryboardSegue {
                 self.source.navigationController?.popViewController(animated: false)
         },
             completion: nil)
-    }*/
+    }
 }
