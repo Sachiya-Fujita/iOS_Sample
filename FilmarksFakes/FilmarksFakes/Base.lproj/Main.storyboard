@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fdd-xj-6Mj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -398,6 +398,96 @@
             </objects>
             <point key="canvasLocation" x="4279.1999999999998" y="90.404797601199405"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="s3I-2X-nj5">
+            <objects>
+                <viewController id="wN0-68-O8r" customClass="DetailViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6VM-WQ-VDU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfZ-A2-xaQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DAL-PI-Wub" firstAttribute="trailing" secondItem="cfZ-A2-xaQ" secondAttribute="trailing" id="AjL-EQ-u3x"/>
+                            <constraint firstItem="cfZ-A2-xaQ" firstAttribute="leading" secondItem="DAL-PI-Wub" secondAttribute="leading" id="JIz-Ob-Z4o"/>
+                            <constraint firstItem="cfZ-A2-xaQ" firstAttribute="top" secondItem="DAL-PI-Wub" secondAttribute="top" id="R9J-G6-Tlr"/>
+                            <constraint firstItem="DAL-PI-Wub" firstAttribute="bottom" secondItem="cfZ-A2-xaQ" secondAttribute="bottom" id="nMv-0h-1QL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DAL-PI-Wub"/>
+                    </view>
+                    <connections>
+                        <outlet property="testImageView" destination="cfZ-A2-xaQ" id="HRt-MJ-Zca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGb-XI-HfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5856" y="1326"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wJU-Jf-Rwo">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="gay-CM-fyJ" customClass="TestTableViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YI8-Bk-Lfa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" id="g6x-TP-uvl">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g6x-TP-uvl" id="1if-eJ-CYn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wN0-68-O8r" kind="showDetail" id="t0H-XW-BpA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gay-CM-fyJ" id="2Fg-vz-KiD"/>
+                            <outlet property="delegate" destination="gay-CM-fyJ" id="5aA-3T-wT3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ewx-UY-zLP"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQa-Gc-9yA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6810" y="661"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tkv-Qr-3kt">
+            <objects>
+                <navigationController id="vd0-oW-M33" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YSi-92-bGO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gay-CM-fyJ" kind="relationship" relationship="rootViewController" id="57U-Rd-I2V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Tl-9t-zi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5856" y="661"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="rft-VA-OLb">
+            <objects>
+                <splitViewController id="fdd-xj-6Mj" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="vd0-oW-M33" kind="relationship" relationship="masterViewController" id="nFI-FM-G1t"/>
+                        <segue destination="wN0-68-O8r" kind="relationship" relationship="detailViewController" id="zgo-1O-ZF8"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBy-or-VRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4906" y="993"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="DLD-So-dhU">
             <objects>
@@ -640,5 +730,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="AHd-sm-dMO"/>
         <segue reference="m6H-N5-4kE"/>
+        <segue reference="t0H-XW-BpA"/>
     </inferredMetricsTieBreakers>
 </document>

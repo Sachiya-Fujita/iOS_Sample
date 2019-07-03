@@ -14,6 +14,7 @@ class DetailViewController: UIViewController,TestTableViewControllerDelegate {
         testImageView.image = image
     }
     
+    //@IBOutlet weak var testImageView: UIImageView!
     @IBOutlet weak var testImageView: UIImageView!
     var imageName:String!
     
@@ -24,12 +25,13 @@ class DetailViewController: UIViewController,TestTableViewControllerDelegate {
         if(imageName != nil) {
             testImageView.image = UIImage(named: imageName)
         }
-        
+        /*
         //戻るボタンの後ろに表示する。
         navigationItem.leftItemsSupplementBackButton = true
         
         //ナビゲーションバーの左ボタンに画面モードの切り替えボタンを表示する。
         navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+ */
     }
     
     /*
