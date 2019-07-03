@@ -28,10 +28,10 @@ class TestTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         //ナビゲーションバーの左ボタンに画面モードの切り替えボタンを表示する。
-//        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//
-//        //戻るボタンの後ろに表示する。
-//        navigationItem.leftItemsSupplementBackButton = true
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+
+        //戻るボタンの後ろに表示する。
+        navigationItem.leftItemsSupplementBackButton = true
     }
 
     // MARK: - Table view data source
@@ -121,12 +121,12 @@ class TestTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-//        if let navigationController = segue.destination as? UINavigationController{
-//            if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
-//                let controller = navigationController.viewControllers.first as! DetailViewController
-//                controller.imageName = tableData[selectedRowIndexPath.row]
-//            }
-//        }
+        if let navigationController = segue.destination as? UINavigationController{
+            if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
+                let controller = navigationController.viewControllers.first as! DetailViewController
+                controller.imageName = tableData[selectedRowIndexPath.row]
+            }
+        }
         
 //        if let selectedRowIndexPath = tableView.indexPathForSelectedRow{
 //            if (segue.identifier == "toDetailNav") {
@@ -136,10 +136,10 @@ class TestTableViewController: UITableViewController {
 //            }
 //        }
         
-        if let viewController = segue.destination as? DetailViewController {
-            if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
-                viewController.imageName = tableData[selectedRowIndexPath.row]
-            }
-        }
+//        if let viewController = segue.destination as? DetailViewController {
+//            if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
+//                viewController.imageName = tableData[selectedRowIndexPath.row]
+//            }
+//        }
     }
 }
