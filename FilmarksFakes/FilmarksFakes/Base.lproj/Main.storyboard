@@ -127,10 +127,10 @@
         <!--Item-->
         <scene sceneID="9rc-lj-OrR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NoQ-nb-gx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="wlu-uH-r8q" customClass="PageViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="vNT-mp-yAK"/>
                 </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NoQ-nb-gx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="998" y="2141"/>
         </scene>
@@ -184,7 +184,6 @@
         <!--View Controller03-->
         <scene sceneID="fog-lb-f6x">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HQH-ex-qRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="vc03" id="RBK-kq-tgT" customClass="ViewController03" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RYy-fb-T5K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -224,6 +223,7 @@
                         <outlet property="myScrollView" destination="K1G-Vg-mUz" id="pB6-ef-fHn"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQH-ex-qRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2034" y="2547"/>
         </scene>
@@ -371,7 +371,7 @@
         <!--Detail View Controller-->
         <scene sceneID="ODw-7o-yYP">
             <objects>
-                <viewController id="GtT-gM-qZ0" customClass="DetailViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailView" id="GtT-gM-qZ0" customClass="DetailViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fJV-a3-o4i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,7 +401,7 @@
         <!--Root View Controller-->
         <scene sceneID="DLD-So-dhU">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="udH-D1-7gS" customClass="TestTableViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MasterTable" clearsSelectionOnViewWillAppear="NO" id="udH-D1-7gS" customClass="TestTableViewController" customModule="FilmarksFakes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GYb-n9-dtx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -415,7 +415,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="OG5-Xv-qG1" kind="showDetail" id="hPO-Ux-FEd"/>
+                                    <segue destination="OG5-Xv-qG1" kind="showDetail" identifier="toDetailNav" id="AHd-sm-dMO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -615,6 +615,7 @@
         <!--Navigation Controller-->
         <scene sceneID="uMX-0B-PaR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XlV-Fl-QgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OG5-Xv-qG1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4uh-Lm-zSe">
@@ -626,7 +627,6 @@
                         <segue destination="GtT-gM-qZ0" kind="relationship" relationship="rootViewController" id="PMS-Yh-c3z"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XlV-Fl-QgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3340" y="90.404797601199405"/>
         </scene>
@@ -638,7 +638,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hPO-Ux-FEd"/>
+        <segue reference="AHd-sm-dMO"/>
         <segue reference="m6H-N5-4kE"/>
     </inferredMetricsTieBreakers>
 </document>

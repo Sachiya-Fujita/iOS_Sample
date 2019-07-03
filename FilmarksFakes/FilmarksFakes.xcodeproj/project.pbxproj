@@ -109,6 +109,7 @@
 				A131A3D222C4778F0088FA16 /* Assets.xcassets */,
 				A131A3D422C4778F0088FA16 /* LaunchScreen.storyboard */,
 				A131A3D722C4778F0088FA16 /* Info.plist */,
+				A131A40D22CC52F30088FA16 /* Images */,
 			);
 			path = FilmarksFakes;
 			sourceTree = "<group>";
@@ -116,9 +117,24 @@
 		A131A40322CB88A10088FA16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A131A40C22CC52C50088FA16 /* Images */,
 				A131A40422CB88A30088FA16 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A131A40C22CC52C50088FA16 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A131A40D22CC52F30088FA16 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
