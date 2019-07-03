@@ -10,6 +10,22 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var counter = 0
+    
+    @IBAction func move1(_ sender: Any) {
+        counter = counter + 1
+        
+        if counter == 2{
+            self.performSegue(withIdentifier: "toSecond", sender: nil)
+            counter = 0
+        }
+    }
+    
+    @IBAction func move2(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let second = storyboard.instantiateViewController(withIdentifier: "Normal")
+        self.present(second, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
