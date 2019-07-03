@@ -67,17 +67,17 @@ class TestTableViewController: UITableViewController {
 //
 //    }
 
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
-//            //デリゲートメソッドを呼び出す。
-//            self.delegate?.selectedCell(image: UIImage(named:tableData[selectedRowIndexPath.row])!)
-//        }
-//        
-//        if let detailViewController = self.delegate as? DetailViewController {
-//            //ディテール部を表示する。
-//        splitViewController?.showDetailViewController(detailViewController.navigationController!, sender: nil)
-//        }
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selectedRowIndexPath = tableView.indexPathForSelectedRow {
+            //デリゲートメソッドを呼び出す。
+            self.delegate?.selectedCell(image: UIImage(named:tableData[selectedRowIndexPath.row])!)
+        }
+        
+        if let detailViewController = self.delegate as? DetailViewController {
+            //ディテール部を表示する。
+        splitViewController?.showDetailViewController(detailViewController.navigationController!, sender: nil)
+        }
+    }
     
     /*
     // Override to support conditional editing of the table view.

@@ -504,9 +504,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="OG5-Xv-qG1" kind="showDetail" identifier="toDetailNav" id="AHd-sm-dMO"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -728,7 +725,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AHd-sm-dMO"/>
         <segue reference="m6H-N5-4kE"/>
         <segue reference="t0H-XW-BpA"/>
     </inferredMetricsTieBreakers>
