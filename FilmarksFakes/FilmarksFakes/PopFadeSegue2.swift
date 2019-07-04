@@ -11,12 +11,15 @@ import UIKit
 class PopFadeSegue2: UIStoryboardSegue {
 //    override func perform() {
 //        UIView.transition(
+//            //with: (self.source.view)!,
 //            with: (source.tabBarController?.view)!,
 //            duration: 0.5,
 //            options: .transitionCrossDissolve,
 //            animations: {
 //                () -> Void in
+//                //self.source.present(self.source, animated: false, completion: nil)
 //                self.source.tabBarController?.setViewControllers([self.destination], animated: false)
+//
 //        },
 //            completion: nil)
 //    }

@@ -14,7 +14,7 @@ class SecondViewController: UIViewController {
     
     @IBAction func move1(_ sender: Any) {
         counter = counter + 1
-        
+
         if counter == 2{
             self.performSegue(withIdentifier: "toSecond", sender: nil)
             counter = 0
@@ -22,9 +22,11 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func move2(_ sender: Any) {
-        let storyboard: UIStoryboard = self.storyboard!
-        let second = storyboard.instantiateViewController(withIdentifier: "Normal")
-        self.present(second, animated: true, completion: nil)
+        transition(.crossDissolve)
+//        let storyboard: UIStoryboard = self.storyboard!
+//        let second = storyboard.instantiateViewController(withIdentifier: "Normal")
+//        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+//        self.present(second, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +35,15 @@ class SecondViewController: UIViewController {
 
     @IBOutlet var secondView: UIView!
     @IBOutlet weak var uiNextButton: UIButton!
-
+    
     @IBAction func unwindToFirstViewController(segue: UIStoryboardSegue) {
+    }
+    
+    func transition(_ style:UIModalTransitionStyle) {
+        let storyboard:UIStoryboard = self.storyboard!
+        let vc = storyboard.instantiateViewController(withIdentifier: "Normal")
+        vc.modalTransitionStyle = style
+        self.present(vc, animated: true, completion: nil)
     }
 }
 
