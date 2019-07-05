@@ -37,12 +37,15 @@ class ViewController02: UIViewController, UIScrollViewDelegate {
         switch sender.currentPage{
         case 0:
             let nextView = storyboard.instantiateViewController(withIdentifier: "vc01")
+            nextView.modalTransitionStyle = .partialCurl
             present(nextView, animated: true, completion: nil)
         case 1:
             let nextView = storyboard.instantiateViewController(withIdentifier: "vc02")
+            nextView.modalTransitionStyle = .partialCurl
             present(nextView, animated: true, completion: nil)
         case 2:
             let nextView = storyboard.instantiateViewController(withIdentifier: "vc03")
+            nextView.modalTransitionStyle = .partialCurl
             present(nextView, animated: true, completion: nil)
         default:
             print("")
